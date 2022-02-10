@@ -64,7 +64,7 @@ main {
 }
 
 #occupation {
-  background-color:greenyellow ;
+  background-color:greenyellow;
   width: 100%;
   text-align: center;
 }
@@ -78,16 +78,19 @@ main {
 #status {
   margin-left: auto;
   padding: 5px;
+  
 }
 
 img {
   border-radius: 50%;
   border: 2px solid red;
+  margin: auto;
 }
 
 /* These rules only applied if the browser window is greater then or equal to 600px */
 @media only screen and (min-width:600px){
   main {
+    background-color: aqua;
     max-width: 900px;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -103,26 +106,45 @@ img {
     grid-area: status;
     margin-right: auto;
     width: 100%;
-    /* text-align: left; */
+    color:cadetblue;
+    
   }
 
   #name {
     grid-area: name;
     text-align: left;    
+    font-size: 25px;
+    margin-bottom: auto;
+    
   }
 
   #img {
     grid-area: img;
-    margin: 0 auto;
+    /* background-color: beige; */
   }
 
   #occupation {
     grid-area: occupation;
+    text-align: left;
+    background-color: aqua;
   }
+
+  #occupation p {
+    margin-left: 10px;
+
+  }
+
 
   #brand {
     grid-area: brand;
     border-left: 2px solid green;
+    border-width: 2px;
+    border-radius: 5px;
+    
+  }
+
+  #brand p {
+    margin-left: 10px;
   }
 
   #contact {
@@ -131,10 +153,14 @@ img {
 
   #offer {
     grid-area: offer;
+    margin-left: 10px;
+    
   }
 
   #brand {
     display: flex;
+    
   }
 
+  
 }
